@@ -155,5 +155,9 @@
     padding: 2rem;
     margin: 2rem auto;
     box-shadow: 0 0 10px hsl(0, 0%, 80%);
+    border-radius: 1.5rem;
+  }
+  .hero__banner {
+    border-radius: 12px;
   }
 }
