@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "YoungSerif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero {
+  margin-bottom: 1rem;
+}
+.hero__banner {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero__content {
+  padding: 0 2rem;
+}
+.hero__header {
+  font-size: 2.25rem;
+  color: hsl(0, 0%, 11%);
+  margin: 1rem 0;
+  font-family: "YoungSerif";
+  font-weight: 500;
+}
+.hero__text {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 1rem;
+}
+.card {
+  background-color: hsl(330, 100%, 98%);
+  font-family: "Outfit";
+  padding: 1rem;
+  border-radius: 10px;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0.5rem;
+}
+
+.card__item::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.8rem;
+}
+.card__label {
+  font-weight: 600;
+}
+.card__list {
+  width: 90%;
+  margin: 0 auto;
+}
+.card__item {
+  padding: 0.5rem 1rem;
+  color: hsl(30, 10%, 34%);
+}
+.ingredients {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.ingredients__header {
+  color: hsl(14, 45%, 36%);
+  font-family: "YoungSerif";
+  font-weight: 500;
+}
+.ingredients__list {
+  font-family: "Outfit";
+  margin: 0 auto;
+  width: 90%;
+  color: hsl(30, 10%, 34%);
+}
+.ingredients__item::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 0.8rem;
+}
+.ingredients__item {
+  padding: 0.5rem;
+}
+.intructions {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+.intructions__header {
+  color: hsl(14, 45%, 36%);
+  font-family: "YoungSerif";
+  font-weight: 500;
+}
+.intructions__list {
+  margin: 1rem auto;
+  font-family: "Outfit";
+  width: 90%;
+  color: hsl(30, 10%, 34%);
+}
+.intructions__item {
+  padding: 0.5rem;
+}
+.intructions__item::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.intructions__label {
+  font-weight: 600;
+  color: hsl(24, 5%, 18%);
+}
+
+.nutrition {
+  padding: 1.5rem 2rem;
+}
+.nutrition__header {
+  color: hsl(14, 45%, 36%);
+  font-family: "YoungSerif";
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.nutrition__text {
+  font-family: "Outfit";
+  margin-bottom: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+.nutrition__list {
+  font-family: "Outfit";
+  list-style-type: none;
+  color: hsl(30, 10%, 34%);
+}
+.nutrition__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  padding: 0.5rem;
+}
+.nutrition__label {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+@media (min-width: 700px) {
+  .main {
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px hsl(0, 0%, 80%);
+  }
+}

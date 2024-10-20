@@ -13,98 +13,10 @@
 
     <title>Frontend Mentor | Recipe page</title>
 
-    <style>
-      @font-face {
-        font-family: "Outfit";
-        src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "YoungSerif";
-        src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
-        font-display: swap;
-      }
-      *,
-      *::before,
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .hero {
-        margin-bottom: 1rem;
-      }
-      .hero__banner {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      .hero__content {
-        padding: 0 2rem;
-      }
-      .hero__header {
-        font-size: 2.25rem;
-        color: hsl(0, 0%, 11%);
-        margin: 1rem 0;
-        font-family: "YoungSerif";
-        font-weight: 500;
-      }
-      .hero__text {
-        font-family: "Outfit";
-        color: hsl(0, 0%, 65%);
-        margin-bottom: 1rem;
-      }
-      .card {
-        background-color: hsl(322, 100%, 98%);
-        font-family: "Outfit";
-        padding: 1rem;
-        border-radius: 10px;
-      }
-      .card__title {
-        font-weight: 500;
-        font-size: 1.2rem;
-        color: hsl(329, 31%, 40%);
-        margin-bottom: 0.5rem;
-      }
-
-      .card__item::marker {
-        color: hsl(329, 31%, 40%);
-        font-size: 0.8rem;
-      }
-      .card__label {
-        font-weight: 600;
-      }
-      .card__list {
-        width: 90%;
-        margin: 0 auto;
-      }
-      .card__item {
-        padding: 0.5rem 1rem;
-      }
-      .ingredients {
-        padding: 0 2rem;
-      }
-      .ingredients__header {
-        color: hsl(3, 40%, 37%);
-        font-family: "YoungSerif";
-        font-weight: 500;
-      }
-      .ingredients__list {
-        font-family: "Outfit";
-        margin: 0 auto;
-        width: 90%;
-      }
-      .ingredients__item::marker {
-        color: hsl(329, 31%, 40%);
-        font-size: 0.8rem;
-      }
-      .ingredients__item {
-        padding: 0.5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
+    <main class="main">
       <section class="hero">
         <img
           src="./assets/images/image-omelette.jpeg"
@@ -146,59 +58,66 @@
           </li>
         </ul>
       </section>
+      <section class="intructions">
+        <h1 class="intructions__header">Instructions</h1>
+        <ol class="intructions__list">
+          <li class="intructions__item">
+            <span class="intructions__label">Beat the eggs</span>: In a bowl,
+            beat the eggs with a pinch of salt and pepper until they are well
+            mixed. You can add a tablespoon of water or milk for a fluffier
+            texture.
+          </li>
+          <li class="intructions__item">
+            <span class="intructions__label">Heat the pan</span>: Place a
+            non-stick frying pan over medium heat and add butter or oil.
+          </li>
+          <li class="intructions__item">
+            <span>Cook the omelette</span>: Once the butter is melted and
+            bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+            coat the surface.
+          </li>
+          <li class="intructions__item">
+            <span class="intructions__label">Add fillings (optional)</span>:
+            When the eggs begin to set at the edges but are still slightly runny
+            in the middle, sprinkle your chosen fillings over one half of the
+            omelette.
+          </li>
+          <li class="intructions__item">
+            <span class="intructions__label">Fold and serve</span>: As the
+            omelette continues to cook, carefully lift one edge and fold it over
+            the fillings. Let it cook for another minute, then slide it onto a
+            plate.
+          </li>
+          <li class="intructions__item">
+            <span class="intructions__label">Enjoy</span>: Serve hot, with
+            additional salt and pepper if needed.
+          </li>
+        </ol>
+      </section>
+      <section class="nutrition">
+        <h1 class="nutrition__header">Nutrition</h1>
+        <p class="nutrition__text">
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
+        <ul class="nutrition__list">
+          <li class="nutrition__item">
+            Calories <span class="nutrition__label">277kcal</span>
+          </li>
+          <li class="nutrition__item">
+            Carbs <span class="nutrition__label">0g</span>
+          </li>
+          <li class="nutrition__item">
+            Protein <span class="nutrition__label">20g</span>
+          </li>
+          <li class="nutrition__item">
+            Fat <span class="nutrition__label">22g</span>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!-- 
-
-  
-
-  
-
-  
-  
-  
-
-
-  
-  
-  
-  
-  
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  div
 
   
   <div class="attribution">
